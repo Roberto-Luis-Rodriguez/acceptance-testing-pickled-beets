@@ -14,7 +14,7 @@ feature "User checks a recipe's deliciousness", %(
   [/] From the "results" page, I am able to click a link bringing me back to
       the home page
   [/] If I submit a blank entry to the form, I am brought to an error page
-  [ ] From the error page, I can click a link bringing me back to the home page
+  [/] From the error page, I can click a link bringing me back to the home page
 
 ) do
 
@@ -68,6 +68,6 @@ feature "User checks a recipe's deliciousness", %(
 
     expect(page).to have_content(nil)
 
-    click_link 'Try again!' 
+    click_link 'Try again!'
   end
 end
